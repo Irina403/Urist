@@ -288,179 +288,78 @@
         color #fff
         font-size 20px
         font-family $ffL
+        xs(font-size,16px)
 
+// МОДАЛЬНОЕ ОКНО
+.popup-fade 
+	display: none;
 
-.popup-fade
-    display none
-.myOverlay 
-    z-index: 9999;
-    position: fixed;
-    background-color: rgba(0,0,0,.7);
-    width: 100%; height: 100%;
-    top: 0; left: 0;
-    cursor :pointer;
-    display :none;
-.myModal {
-    position fixed
+.popup-fade:before 
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+
+.popup
+    padding: 70px 50px
+    position: fixed
     top 50%
     left 50%
-    width: 1100px
-    max-width 100vw
-    max-height: 80vh
-    transform translate(-50%, -50%)
-    background-color #fff
-    border-radius 50px
-    z-index 999999
-    opacity 2
-    box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.34);
-    overflow-y scroll
-}
-// #myModal #myModal__close {
-//   width: 21px; height: 21px;
-//   position: absolute;
-//   top: 1px; right: 11px;
-//   cursor: pointer;
-//   display: block;
-//   font-size: 29px;
-// }
-// .myOverlay {
-//   z-index: 9999;
-//   position: fixed;
-//   background-color: rgba(0,0,0,.7);
-//   width: 100%; height: 100%;
-//   top: 0; left: 0;
-//   cursor :pointer;
-//   display :none;
-// }
-// .popup-fade::before
-//     content ''
-//     background-color #000
-//     position fixed
-//     left 0
-//     top 0
-//     width 100%
-//     height 100%
-//     opacity 0.7
-//     z-index 9
-// .popup
-//     position fixed
-//     top 50%
-//     left 50%
-//     width: 1100px
-//     max-width 100vw
-//     max-height: 80vh
-//     transform translate(-50%, -50%)
-//     background-color #fff
-//     border-radius 50px
-//     z-index 999999
-//     opacity 2
-//     box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.34);
-//     overflow-y scroll
+    transform: translate(-50%, -50%)
+    background: #fff
+    z-index 99999
+    opacity 1
+    width 50%
+    xs(height, 80%)
+    xs(width, 90%)
+    xs(padding, 10px 30px)
+    xs(overflow-x, hidden)
+    xs(overflow-y, auto)
 
-.popup__wrapper
-    margin 45px
-.popup__wrapper
-    &::before
-        content url('../images/elipse-blue.png')
-        display block
-        position absolute
-        left 0
-.popup-close
-    position absolute
-    top 15px
-    right 40px
-    cursor pointer
-.popup-fade__text
-    position relative
-    padding-top 45px
-    padding-bottom 30px
-    font-size countFontSize(35)
-    font-family $ff2
-    text-transform uppercase
-.popupBox
-    position relative
-    width 102%
-    left -1%
-    right -1%
-    background-color #fff
-    background-image url(../images/modal-background.png)
-    background-repeat no-repeat
-    background-position 90% 0%
-    border-radius 20px
-    box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.1);
-    margin-top countVW(80)
-    display flex
-    &__subtitle
-        font-size countFontSize(23)
-        font-family $ff3
-        color $style1
+
+.bodyModal
+    padding: 70px 50px
+    xs(padding, 70px 10px)
     &__text
-        margin-top countVW(30)
-        font-size countFontSize(20)
-        font-family $ff3
-        line-height 152%
-    &__btn
-        margin-top countVW(30)
-        display flex
-        align-items center
-        justify-content center
-        background-color $style1
-        border-radius 20px
-        width 211px
-        height 59px
-    &__link
         font-size 20px
-        color #fff
-        font-family $ff
-    &__right
-        width 100%
-        margin-top -100px
-.popupBox__left
-    padding 50px
-
-.popupPrice
-    position relative
-    padding 50px
-    &::before
-        content url('../images/orange-modal.png')
-        display block
-        position absolute
-        left 0
-        top 0   
-    &__box
-        // max-width 1200px
-        // display flex
-        // justify-content space-between
-    &__subtitle
-        position inherit
-        font-size countFontSize(35)
-    &__list
-        width 100% 
-        
-        &::after
-            position absolute
-            content ''
-            display block
-            background-color $style2
-            height 85%
-            width 1px
-            top 10%
-            right 300px
-            xs(display, none)
+        font-family $ffL
+        xs(font-size, 16px)
     &__item
-        margin-top countVW(40)
-        font-size 20px
+        margin-bottom 15px
+
+.headerModal
+    &__title 
+        font-size 50px
         font-family $ff
-      
-    &__priceItem
-        margin-top countVW(20)
-        font-size 20px
-        font-family $ff
-        color $style1
-    &__element 
-        width 100%
-        align-items center
-        display flex
-        justify-content space-between
-        xs(flex-direction, column)
-        xs(align-items, flex-start)
+        xs(font-size, 36px)
+
+.popup-close 
+	position: absolute
+	top: 20px
+	right: 20px
+
+.headerModal::after
+    margin-top 35px
+    position: absolute
+    left 0
+    content: ''
+    display block
+    width 60%
+    height 1px
+    background-color: #000
+
+.buttonMain__modal
+    padding-left 50px
+    font-size 20px
+    font-family $ffL
+    text-decoration none
+    xs(padding-left, 10px)
+
+.buttonMain
+    display flex
+    

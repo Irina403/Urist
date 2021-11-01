@@ -4,7 +4,7 @@
             .titleBlock__text Юридические услуги <br>для бизнеса
         
         .mainScreen__button-block.buttonMain 
-            a(href="#").buttonMain__link Заказать консультацию
+            a(href="#footerForm").buttonMain__link Заказать консультацию
                 img(src="images/btn.svg", alt="").buttonMain__img 
 
 .aboutCompany 
@@ -24,29 +24,29 @@
         .titleBlock__text.titleBlock__text-dark Услуги
     
     .services__block.servicesList 
-        .servicesList__item(style="background-repeat:no-repeat; background-image:url(images/services1.jpg);")
+        .servicesList__item(style="background-repeat:no-repeat; background-size:cover; background-image:url(images/services1.jpg);")
             .servicesList__container
                 .servicesList__title Представление в судах общей юрисдикции
-                .servicesList__btn 
-                    a(href="#").servicesList__link.myLinkModal Подробнее
+                .servicesList__btn.popup-open 
+                    a(href="#").servicesList__link.popup-open(data-id="service1") Подробнее
 
-        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services2.jpg)")
+        .servicesList__item(style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services2.jpg)")
             .servicesList__container
                 .servicesList__title Представление в арбитражных судах
                 .servicesList__btn 
-                    a(href="#").servicesList__link Подробнее
+                    a(href="#").servicesList__link.popup-open(data-id="service2") Подробнее
         
-        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services3.jpg)")
+        .servicesList__item(style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services3.jpg)")
             .servicesList__container
                 .servicesList__title Налоговые споры
                 .servicesList__btn 
-                    a(href="#").servicesList__link.myLinkModal Подробнее
+                    a(href="#").servicesList__link.popup-open(data-id="service3") Подробнее
         
-        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services4.jpg)")
+        .servicesList__item(style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services4.jpg)")
             .servicesList__container
                 .servicesList__title Корпоративное право
                 .servicesList__btn 
-                    a(href="#").servicesList__link Подробнее
+                    a(href="#").servicesList__link.popup-open(data-id="service4") Подробнее
         
 
 
@@ -75,7 +75,7 @@
 
 .contactFormBlock
     .contactFormBlock.titleNoline
-        .titleNoline__text Запишитесь на консультацию
+        .titleNoline__text#footerForm Запишитесь на консультацию
 
         form.contactForm#feedback-form(action="#")
             input.contactForm__input(type="text" placeholder="Ваше имя" name="name")
@@ -109,21 +109,64 @@ footer.footer
         .copyright__text © ИП Халилова Гульяр Абдурахмановна, 2021
 
 
-//- МОДАЛКА 4
-//- .myOverlay
-//-     .popup-fade.myModal
-//-         .popup
-//-             a.popup-close(href="#") 
-//-                 img(src="images/close.svg", alt="")
-//-             .popup__wrapper    
-//-                 h2.popup-fade__text Вскрытие сейфов
+.popup-fade#service1 
+    .popup
+        a.popup-close 
+            img(src="images/close.svg", alt="")
+        .modal-window__header.headerModal
+            .headerModal__title Представление в судах общей юрисдикции
+        .modal-window__body.bodyModal 
+            ul.bodyModal__text 
+                li.bodyModal__item Предварительное юридическое консультирование клиента. Оценка перспективности дела.
+                li.bodyModal__item Претензионная работа с контрагентом нашего клиента.
+                li.bodyModal__item Составление искового заявления.
+                li.bodyModal__item Составление отзывов на исковые заявления.
+                li.bodyModal__item Сбор всей необходимой для судебного процесса документации.
+                li.bodyModal__item Направление искового заявления в суд по подведомственности и подсудности.
+                li.bodyModal__item Представление интересов клиента в судебном процессе на всех его стадиях.
+                li.bodyModal__item Представление интересов клиента на стадии исполнительного производства.
 
-//-             .popupWrapBoxs
-//-                 .popupBox
-//-                     .popupBox__left
-//-                         .popupBox__subtitle Заклинило замена сейфа? Не беда!
-//-                         .popupBox__text Наша компания предоставляет услуги по вскрытию дверей любой сложности.
-//-                         .popupBox__btn 
-//-                             a.popupBox__link(href="#") Оставить заявку
-//-                     .popupBox__right 
-//-                         img.popupBox__right-img(src="images/photo-modal.png", alt="")
+        .modal-window__footer 
+            .buttonMain 
+                a(href="#footerForm").buttonMain__modal Заказать консультацию
+                img(src="images/btn-dark.svg", alt="").buttonMain__img 
+
+.popup-fade#service2
+    .popup 
+        a.popup-close 
+            img(src="images/close.svg", alt="")
+        .modal-window__header.headerModal
+            .headerModal__title Представление в арбитражных судах
+        .modal-window__body.bodyModal 
+            .bodyModal__text Описание услуги
+        .modal-window__footer 
+            .buttonMain 
+                a(href="#footerForm").buttonMain__modal Заказать консультацию
+                img(src="images/btn-dark.svg", alt="").buttonMain__img 
+
+.popup-fade#service3
+    .popup 
+        a.popup-close 
+            img(src="images/close.svg", alt="")
+        .modal-window__header.headerModal
+            .headerModal__title Представление в арбитражных судах
+        .modal-window__body.bodyModal 
+            .bodyModal__text Описание услуги
+        .modal-window__footer 
+            .buttonMain 
+                a(href="#footerForm").buttonMain__modal Заказать консультацию
+                img(src="images/btn-dark.svg", alt="").buttonMain__img 
+
+.popup-fade#service4
+    .popup 
+        a.popup-close 
+            img(src="images/close.svg", alt="")
+        .modal-window__header.headerModal
+            .headerModal__title Представление в арбитражных судах
+        .modal-window__body.bodyModal 
+            .bodyModal__text Описание услуги
+        .modal-window__footer 
+            .buttonMain 
+                a(href="#footerForm").buttonMain__modal Заказать консультацию
+                img(src="images/btn-dark.svg", alt="").buttonMain__img 
+

@@ -63,7 +63,7 @@
                 <div class="titleBlock__text">Юридические услуги
                     <br>для бизнеса</div>
             </div>
-            <div class="mainScreen__button-block buttonMain"> <a class="buttonMain__link" href="#">Заказать консультацию<img class="buttonMain__img" src="images/btn.svg" alt=""></a>
+            <div class="mainScreen__button-block buttonMain"> <a class="buttonMain__link" href="#footerForm">Заказать консультацию<img class="buttonMain__img" src="images/btn.svg" alt=""></a>
             </div>
         </div>
     </div>
@@ -85,31 +85,31 @@
             <div class="titleBlock__text titleBlock__text-dark">Услуги</div>
         </div>
         <div class="services__block servicesList">
-            <div class="servicesList__item" style="background-repeat:no-repeat; background-image:url(images/services1.jpg);">
+            <div class="servicesList__item" style="background-repeat:no-repeat; background-size:cover; background-image:url(images/services1.jpg);">
                 <div class="servicesList__container">
                     <div class="servicesList__title">Представление в судах общей юрисдикции</div>
-                    <div class="servicesList__btn"> <a class="servicesList__link myLinkModal" href="#">Подробнее</a>
+                    <div class="servicesList__btn popup-open"> <a class="servicesList__link popup-open" href="#" data-id="service1">Подробнее</a>
                     </div>
                 </div>
             </div>
-            <div class="servicesList__item" style="background-repeat:no-repeat;background-image:url(images/services2.jpg)">
+            <div class="servicesList__item" style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services2.jpg)">
                 <div class="servicesList__container">
                     <div class="servicesList__title">Представление в арбитражных судах</div>
-                    <div class="servicesList__btn"> <a class="servicesList__link" href="#">Подробнее</a>
+                    <div class="servicesList__btn"> <a class="servicesList__link popup-open" href="#" data-id="service2">Подробнее</a>
                     </div>
                 </div>
             </div>
-            <div class="servicesList__item" style="background-repeat:no-repeat;background-image:url(images/services3.jpg)">
+            <div class="servicesList__item" style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services3.jpg)">
                 <div class="servicesList__container">
                     <div class="servicesList__title">Налоговые споры</div>
-                    <div class="servicesList__btn"> <a class="servicesList__link myLinkModal" href="#">Подробнее</a>
+                    <div class="servicesList__btn"> <a class="servicesList__link popup-open" href="#" data-id="service3">Подробнее</a>
                     </div>
                 </div>
             </div>
-            <div class="servicesList__item" style="background-repeat:no-repeat;background-image:url(images/services4.jpg)">
+            <div class="servicesList__item" style="background-repeat:no-repeat;background-size:cover;background-image:url(images/services4.jpg)">
                 <div class="servicesList__container">
                     <div class="servicesList__title">Корпоративное право</div>
-                    <div class="servicesList__btn"> <a class="servicesList__link" href="#">Подробнее</a>
+                    <div class="servicesList__btn"> <a class="servicesList__link popup-open" href="#" data-id="service4">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
     </div>
     <div class="contactFormBlock">
         <div class="contactFormBlock titleNoline">
-            <div class="titleNoline__text">Запишитесь на консультацию</div>
+            <div class="titleNoline__text" id="footerForm">Запишитесь на консультацию</div>
             <form class="contactForm" id="feedback-form" action="#">
                 <input class="contactForm__input" type="text" placeholder="Ваше имя" name="name">
                 <input class="contactForm__input" type="tel" placeholder="Ваш телефон" name="phone">
@@ -177,9 +177,92 @@
             <div class="copyright__text">© ИП Халилова Гульяр Абдурахмановна, 2021</div>
         </div>
     </footer>
+    <div class="popup-fade" id="service1">
+        <div class="popup">
+            <a class="popup-close">
+                <img src="images/close.svg" alt="">
+            </a>
+            <div class="modal-window__header headerModal">
+                <div class="headerModal__title">Представление в судах общей юрисдикции</div>
+            </div>
+            <div class="modal-window__body bodyModal">
+                <ul class="bodyModal__text">
+                    <li class="bodyModal__item">Предварительное юридическое консультирование клиента. Оценка перспективности дела.</li>
+                    <li class="bodyModal__item">Претензионная работа с контрагентом нашего клиента.</li>
+                    <li class="bodyModal__item">Составление искового заявления.</li>
+                    <li class="bodyModal__item">Составление отзывов на исковые заявления.</li>
+                    <li class="bodyModal__item">Сбор всей необходимой для судебного процесса документации.</li>
+                    <li class="bodyModal__item">Направление искового заявления в суд по подведомственности и подсудности.</li>
+                    <li class="bodyModal__item">Представление интересов клиента в судебном процессе на всех его стадиях.</li>
+                    <li class="bodyModal__item">Представление интересов клиента на стадии исполнительного производства.</li>
+                </ul>
+            </div>
+            <div class="modal-window__footer">
+                <div class="buttonMain"> <a class="buttonMain__modal" href="#footerForm">Заказать консультацию</a>
+                    <img class="buttonMain__img" src="images/btn-dark.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade" id="service2">
+        <div class="popup">
+            <a class="popup-close">
+                <img src="images/close.svg" alt="">
+            </a>
+            <div class="modal-window__header headerModal">
+                <div class="headerModal__title">Представление в арбитражных судах</div>
+            </div>
+            <div class="modal-window__body bodyModal">
+                <div class="bodyModal__text">Описание услуги</div>
+            </div>
+            <div class="modal-window__footer">
+                <div class="buttonMain"> <a class="buttonMain__modal" href="#footerForm">Заказать консультацию</a>
+                    <img class="buttonMain__img" src="images/btn-dark.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade" id="service3">
+        <div class="popup">
+            <a class="popup-close">
+                <img src="images/close.svg" alt="">
+            </a>
+            <div class="modal-window__header headerModal">
+                <div class="headerModal__title">Представление в арбитражных судах</div>
+            </div>
+            <div class="modal-window__body bodyModal">
+                <div class="bodyModal__text">Описание услуги</div>
+            </div>
+            <div class="modal-window__footer">
+                <div class="buttonMain"> <a class="buttonMain__modal" href="#footerForm">Заказать консультацию</a>
+                    <img class="buttonMain__img" src="images/btn-dark.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-fade" id="service4">
+        <div class="popup">
+            <a class="popup-close">
+                <img src="images/close.svg" alt="">
+            </a>
+            <div class="modal-window__header headerModal">
+                <div class="headerModal__title">Представление в арбитражных судах</div>
+            </div>
+            <div class="modal-window__body bodyModal">
+                <div class="bodyModal__text">Описание услуги</div>
+            </div>
+            <div class="modal-window__footer">
+                <div class="buttonMain"> <a class="buttonMain__modal" href="#footerForm">Заказать консультацию</a>
+                    <img class="buttonMain__img" src="images/btn-dark.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
 </body>
 
