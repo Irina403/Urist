@@ -1,0 +1,153 @@
+.navContainer
+.navWrapper
+    margin-top 36px
+    display flex
+    justify-content flex-end
+    align-items center
+    margin-right 150px
+    // xs(flex-wrap, wrap)
+    // xs(justify-content, center)
+    xs(justify-content, flex-start)
+    xs(margin-top, 0px)
+    xxl(margin-right, 50px)
+
+.nav
+
+    display flex
+    md(display, none)
+    md(margin-left, 0px)
+    xxl(justify-content, space-around)
+
+    // xxl(background-color, #fff)
+
+    &__item
+        margin-right 40px
+        text-decoration none
+        
+    &__link
+        font-family $ff2
+        font-size 22px
+        text-decoration none
+        color $black
+
+
+// .logo
+//     padding-top 15px
+//     margin-right 50px
+//     xs(margin-right, 0px)
+//     md(margin-right, 10px)
+//     xxl(padding-top,0px)
+//     xxl(order,1)
+
+    // &__img
+    //   md(margin-left, 255px)
+    //   sm(margin-left, 15px)
+.contactMobile
+  // xs(background, rgba(249, 249, 249, 0.6))
+  xs(margin-top, 15px)
+ 
+  xxl(order,2)
+.contactMobile__link
+    font-size 22px
+    text-decoration none
+    color $black
+    xs(font-size, 20px)
+    xs(padding-top,15px)
+    xs(font-family, $ff3)
+
+
+// .buttonCall 
+//     padding 10px 40px
+//     background-color $mainColor
+//     border-radius 5px
+//     xs(margin-top, 30px)
+//     xxl(order,3)
+//     &__link
+//         font-size 1.8rem
+//         font-family $ff
+// МОБИЛЬНО МЕНЮ
+#nav
+  position absolute
+  top 45px
+  width 100%
+  overflow hidden
+  background #fff
+  height 0
+  max-height 0px 
+  list-style-type none
+  padding-left 0
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+  box-shadow: 0px 4px 4px rgba(169, 169, 169, 0.25);
+
+
+#nav.open 
+  height auto
+  max-height 100%
+  transition linear 1s
+  -webkit-transition: linear 1s;
+
+
+#nav li
+  float none
+  text-align center
+  text-decoration none
+  width 100% 
+  margin 0
+  transition linear 1s
+
+
+#nav li a 
+  color $black
+  padding 10px
+  display block
+  margin 0
+  transition linear 1s
+  font-family $ff   
+.mobile-nav__link
+  font-size 20px
+  text-decoration: none
+.mobile-wrapp
+    // position relative
+#contain
+    position absolute 
+    display none 
+    cursor pointer
+    right 0
+    top 2px
+    sm(display,inline-block)
+    xs(display,inline-block)
+    xs(right, 10px)
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #3F3F3F
+    margin: 6px 0;
+    transition: 0.2s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.hover .bar1 {
+  background-color: red;
+}
+
+.hover .bar2 {
+  background-color: red;
+}
+
+.hover .bar3 {
+  background-color: red;
+}

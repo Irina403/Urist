@@ -1,0 +1,466 @@
+.mainScreen 
+    margin-top 25px
+    // wrapper()
+    background-image: url(../images/main.jpg)
+    background-repeat: no-repeat;
+    margin-left 5%
+    margin-right 0%
+    xs(margin-left, 0px)
+    xs(margin-right, 0px)
+    xs(padding, 20px)
+    &__title-block
+        padding-top: 188px
+    &__button-block
+        padding-top: 90px
+        display flex
+        align-items: center
+    &__wrapper
+        padding-left: 300px
+        xs(padding-left, 0px)
+        xxl(padding-left, 120px)
+
+
+
+.titleBlock
+    &__text
+        font-size 70px
+        font-family $ff
+        color #fff
+        xs(font-size, 56px)
+
+.buttonMain__link
+    display flex
+    align-items: center
+    text-decoration none
+    font-family $ff
+    color #fff
+    font-size 20px
+.buttonMain__img 
+    margin-left 50px
+
+.mainScreen__button-block
+    padding-bottom 250px
+    xs(padding-bottom, 180px)
+
+.aboutCompany 
+    position relative
+    margin-top 150px
+    display flex
+    xs(flex-wrap, wrap)
+    xs(margin-top, 30px)
+    &__title
+        margin-left 100px
+        xs(margin-left, 0px)
+        xs(padding, 20px)
+        xxl(margin-left, 30px)
+
+    &__text
+        margin-top 20px
+        width 60%
+        font-family $ffL
+        font-size 22px
+        color $black
+        xs(width, 100%)
+        xxl(width, 90%)
+
+.blockImg    
+    &__back
+        top 15%
+        width 45%
+        height 90%
+        position: absolute
+        background-color: $style1
+        z-index -1
+
+        xs(display, none)
+        xxl(width, 35%)
+        xxl(height, 87%)
+    &__picture
+        margin-left 400px
+        xs(margin-left, 0px)
+        xxl(margin-left, 200px)
+
+.titleBlock__text-dark
+    color $black
+    &::after
+        margin-left -100px
+        margin-top 70px
+        margin-bottom 70px
+        display block
+        content ''
+        background-color: #2D2D2D
+        width 100%
+        height 1px
+        xs(margin-left,0px)
+        xs(margin-top, 20px)
+        xs(margin-bottom, 20px)
+        xxl(margin-left,0px)
+        xs(display, none)
+        
+
+.services
+    margin-top 100px
+    wrapper()
+    xs(margin-top, 30px)
+    // margin-left 20%
+.blockImg__picture img
+
+    // xxl(width, 100%)
+    xs(width, 100%)
+.servicesList__item img
+    width 100%
+.servicesList
+    display flex
+    justify-content: space-between
+    xs(flex-wrap, wrap)
+    xs(justify-content, center)
+
+    &__item
+        width 390px
+        display flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        height 475px
+        position relative
+        xs(margin-top, 20px)
+        xs(width, 100%)
+
+    &__title
+        margin-top -150px
+        padding-left 22px
+        padding-right 22px
+        font-size 22px
+        color #fff
+        font-family $ffL
+        text-align center
+
+    &__link 
+        color #fff
+        text-decoration none
+           
+    &__container
+        display flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        
+
+.servicesList__btn 
+    padding 50px
+    // background-color red
+    background-image: url(../images/oval.png)
+    background-repeat: no-repeat
+    background-position: center
+
+.advantages
+    background-color $black
+    background-size: 20px
+    
+    &__wrapper
+        wrapper()
+        margin-top 100px
+    &__container
+        display flex
+        xs(display, block)
+
+.titleNoline
+    &__text
+        font-size 48px
+        font-family $ff
+        color $black
+
+.advantagesList
+    display flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__title
+
+        font-size 26px
+        font-family $ff2
+
+    &__opisanie
+        font-size 22px
+        font-family $ffL
+    &__item
+        margin-top 150px
+        display flex
+        flex-direction: column
+        justify-content: space-between
+        height 150px
+        width 40%
+        xs(margin-top, 56px)
+        xs(width,100%)
+        &-order1
+            xs(order,1)
+            xs(color, #fff)
+        &-order2
+            xs(order,2)
+            xs(color, #fff)
+        &-order3
+            xs(order,3)
+            xs(color, $black !important)
+        &-order4
+            xs(order,4)
+            xs(color, $black !important)
+    &__item:nth-child(2n) 
+        color #fff
+
+.advantages__title
+    position relative
+.boxBack
+    position: absolute
+    width 50%
+    margin-top -50px
+    height 800px
+    background-color $style1
+    z-index -1
+    right   0
+    xs(width, 100%)
+    xs(margin-top, 10px)
+    xs(height, 53%)
+
+.contactForm
+    margin-top 90px
+    display flex
+    justify-content: space-between
+    xs(flex-wrap, wrap)
+    xs(margin-top, 20px)
+.contactFormBlock
+    wrapper()
+    margin-top 200px
+    padding-left 0px
+    xs(margin-top, 50px)
+.contactForm__input
+    border none
+    border-bottom: 1px solid $black
+    font-size 22px
+    font-family $ffL
+    xs(margin-bottom, 10px)
+
+.contactForm__button
+    display flex
+    xs(margin-top, 10px)
+
+.contactForm__link
+    border none
+    color $black
+    background-color #fff
+    font-family $ffL
+    font-size 20px
+    margin-right 10px
+
+.footer 
+    margin-top 200px
+    background-color $style1
+    xs(margin-top, 20px)
+
+    &__block 
+        padding-top 80px
+        wrapper()
+        display flex
+        justify-content: space-between
+        xs(flex-wrap, wrap)
+
+.navList 
+    &__item
+        display block
+        margin-bottom 20px
+        color #fff
+        font-size 22px
+        font-family $ffL
+        text-decoration none
+    
+.copyright 
+    margin-top 130px
+    wrapper()
+    display flex
+    justify-content: space-between
+    xs(flex-wrap, wrap)
+    xs(margin-top,50px)
+    &__img
+        margin-left 10px
+
+    &__logo
+        display flex
+        
+    &__text
+        color #fff
+        font-size 20px
+        font-family $ffL
+
+
+.popup-fade
+    display none
+.myOverlay 
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    cursor :pointer;
+    display :none;
+.myModal {
+    position fixed
+    top 50%
+    left 50%
+    width: 1100px
+    max-width 100vw
+    max-height: 80vh
+    transform translate(-50%, -50%)
+    background-color #fff
+    border-radius 50px
+    z-index 999999
+    opacity 2
+    box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.34);
+    overflow-y scroll
+}
+// #myModal #myModal__close {
+//   width: 21px; height: 21px;
+//   position: absolute;
+//   top: 1px; right: 11px;
+//   cursor: pointer;
+//   display: block;
+//   font-size: 29px;
+// }
+// .myOverlay {
+//   z-index: 9999;
+//   position: fixed;
+//   background-color: rgba(0,0,0,.7);
+//   width: 100%; height: 100%;
+//   top: 0; left: 0;
+//   cursor :pointer;
+//   display :none;
+// }
+// .popup-fade::before
+//     content ''
+//     background-color #000
+//     position fixed
+//     left 0
+//     top 0
+//     width 100%
+//     height 100%
+//     opacity 0.7
+//     z-index 9
+// .popup
+//     position fixed
+//     top 50%
+//     left 50%
+//     width: 1100px
+//     max-width 100vw
+//     max-height: 80vh
+//     transform translate(-50%, -50%)
+//     background-color #fff
+//     border-radius 50px
+//     z-index 999999
+//     opacity 2
+//     box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.34);
+//     overflow-y scroll
+
+.popup__wrapper
+    margin 45px
+.popup__wrapper
+    &::before
+        content url('../images/elipse-blue.png')
+        display block
+        position absolute
+        left 0
+.popup-close
+    position absolute
+    top 15px
+    right 40px
+    cursor pointer
+.popup-fade__text
+    position relative
+    padding-top 45px
+    padding-bottom 30px
+    font-size countFontSize(35)
+    font-family $ff2
+    text-transform uppercase
+.popupBox
+    position relative
+    width 102%
+    left -1%
+    right -1%
+    background-color #fff
+    background-image url(../images/modal-background.png)
+    background-repeat no-repeat
+    background-position 90% 0%
+    border-radius 20px
+    box-shadow: 0px 17px 92px rgba(12, 21, 103, 0.1);
+    margin-top countVW(80)
+    display flex
+    &__subtitle
+        font-size countFontSize(23)
+        font-family $ff3
+        color $style1
+    &__text
+        margin-top countVW(30)
+        font-size countFontSize(20)
+        font-family $ff3
+        line-height 152%
+    &__btn
+        margin-top countVW(30)
+        display flex
+        align-items center
+        justify-content center
+        background-color $style1
+        border-radius 20px
+        width 211px
+        height 59px
+    &__link
+        font-size 20px
+        color #fff
+        font-family $ff
+    &__right
+        width 100%
+        margin-top -100px
+.popupBox__left
+    padding 50px
+
+.popupPrice
+    position relative
+    padding 50px
+    &::before
+        content url('../images/orange-modal.png')
+        display block
+        position absolute
+        left 0
+        top 0   
+    &__box
+        // max-width 1200px
+        // display flex
+        // justify-content space-between
+    &__subtitle
+        position inherit
+        font-size countFontSize(35)
+    &__list
+        width 100% 
+        
+        &::after
+            position absolute
+            content ''
+            display block
+            background-color $style2
+            height 85%
+            width 1px
+            top 10%
+            right 300px
+            xs(display, none)
+    &__item
+        margin-top countVW(40)
+        font-size 20px
+        font-family $ff
+      
+    &__priceItem
+        margin-top countVW(20)
+        font-size 20px
+        font-family $ff
+        color $style1
+    &__element 
+        width 100%
+        align-items center
+        display flex
+        justify-content space-between
+        xs(flex-direction, column)
+        xs(align-items, flex-start)

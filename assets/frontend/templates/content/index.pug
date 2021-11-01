@@ -1,0 +1,129 @@
+.mainScreen
+    .mainScreen__wrapper
+        .mainScreen__title-block.titleBlock 
+            .titleBlock__text Юридические услуги <br>для бизнеса
+        
+        .mainScreen__button-block.buttonMain 
+            a(href="#").buttonMain__link Заказать консультацию
+                img(src="images/btn.svg", alt="").buttonMain__img 
+
+.aboutCompany 
+    .aboutCompany__blockImg.blockImg
+    .blockImg__back 
+
+    .blockImg__picture 
+        img(src="images/about_company.jpg", alt="")
+
+    .aboutCompany__title.titleBlock#Company
+        .titleBlock__text.titleBlock__text-dark О компании
+        .aboutCompany__text Наша компания предлагает широкий спектр юридических услуг для поддержки бизнеса.
+        .aboutCompany__text Накопленный опыт сотрудничества с различными компаниями среднего и малого бизнеса, а также взаимодействие с государственными органами и обширная судебная практика позволяют нам всесторонне и максимально эффективно решать любые вопросы, связанные с ведением бизнеса в России в правовой плоскости.
+
+.services
+    .titleBlock#Services
+        .titleBlock__text.titleBlock__text-dark Услуги
+    
+    .services__block.servicesList 
+        .servicesList__item(style="background-repeat:no-repeat; background-image:url(images/services1.jpg);")
+            .servicesList__container
+                .servicesList__title Представление в судах общей юрисдикции
+                .servicesList__btn 
+                    a(href="#").servicesList__link.myLinkModal Подробнее
+
+        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services2.jpg)")
+            .servicesList__container
+                .servicesList__title Представление в арбитражных судах
+                .servicesList__btn 
+                    a(href="#").servicesList__link Подробнее
+        
+        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services3.jpg)")
+            .servicesList__container
+                .servicesList__title Налоговые споры
+                .servicesList__btn 
+                    a(href="#").servicesList__link.myLinkModal Подробнее
+        
+        .servicesList__item(style="background-repeat:no-repeat;background-image:url(images/services4.jpg)")
+            .servicesList__container
+                .servicesList__title Корпоративное право
+                .servicesList__btn 
+                    a(href="#").servicesList__link Подробнее
+        
+
+
+.advantages__wrapper
+    .advantages__container
+        div
+            .advantages__title.titleNoline#Advantages
+                .titleNoline__text Преимущества
+            .boxBack
+            .advantagesList
+                .advantagesList__item.advantagesList__item-order1
+                    .advantagesList__title 01 Опытные специалисты
+                    .advantagesList__opisanie Наши сотрудники отлично разбираются в действующем законодательстве и имеют большой опыт работы.
+
+                .advantagesList__item.advantagesList__item-order3
+                    .advantagesList__title 03 Индивидуальный подход
+                    .advantagesList__opisanie В процессе работы мы учитываем малейшие тонкости и нюансы абсолютно каждого дела.
+
+                .advantagesList__item.advantagesList__item-order2
+                    .advantagesList__title 02 Широкий спектр услуг
+                    .advantagesList__opisanie Мы проведем грамотную консультацию и поможем решить практически любой ваш вопрос, независимо от сложности.
+
+                .advantagesList__item.advantagesList__item-order4
+                    .advantagesList__title 04 Конфиденциальность
+                    .advantagesList__opisanie Гарантируем, что любая информация, переданная нам, никогда не попадёт в третьи руки.
+
+.contactFormBlock
+    .contactFormBlock.titleNoline
+        .titleNoline__text Запишитесь на консультацию
+
+        form.contactForm#feedback-form(action="#")
+            input.contactForm__input(type="text" placeholder="Ваше имя" name="name")
+            input.contactForm__input(type="tel" placeholder="Ваш телефон" name="phone")
+            input.contactForm__input(type="text" placeholder="Необходимая услуга" name="services")
+            .contactForm__button 
+                input.contactForm__link(type="submit" name="submit" value="Отправить") 
+                img(src="images/btn-dark.svg", alt="").contactForm__img 
+    
+footer.footer 
+    .footer__block 
+        .footer__navList.navList 
+            a(href="#Company").navList__item О компании
+            a(href="#Services").navList__item Услуги
+            a(href="#Advantages").navList__item Преимущества
+
+        .navList 
+            a(href="tel:88005553535").navList__item 8 800 555 35 35
+            a(href="mailto:test@mail.ru").navList__item test@mail.ru
+
+        .navList 
+            .navList__item ИП Халилова Гульяр Абдурахмановна
+            .navList__item ИНН: 056009401000 
+            .navList__item ОГРНИП: 321057100045752 
+    
+    .copyright 
+        .copyright__logo 
+            .copyright__text Разработано arkada-web.ru
+            img.copyright__img(src="images/logo-min 1.png", alt="")
+        
+        .copyright__text © ИП Халилова Гульяр Абдурахмановна, 2021
+
+
+//- МОДАЛКА 4
+//- .myOverlay
+//-     .popup-fade.myModal
+//-         .popup
+//-             a.popup-close(href="#") 
+//-                 img(src="images/close.svg", alt="")
+//-             .popup__wrapper    
+//-                 h2.popup-fade__text Вскрытие сейфов
+
+//-             .popupWrapBoxs
+//-                 .popupBox
+//-                     .popupBox__left
+//-                         .popupBox__subtitle Заклинило замена сейфа? Не беда!
+//-                         .popupBox__text Наша компания предоставляет услуги по вскрытию дверей любой сложности.
+//-                         .popupBox__btn 
+//-                             a.popupBox__link(href="#") Оставить заявку
+//-                     .popupBox__right 
+//-                         img.popupBox__right-img(src="images/photo-modal.png", alt="")
